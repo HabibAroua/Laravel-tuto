@@ -12,7 +12,10 @@
 to clear cash "npm cache clear --force"
 npm run dev x2
 How To Disable App Notifications In Windows 10
-if you use windows 10 
+if you use windows 10
 All you have to do is Enable windows notification
 
 windows settings ->> Notifications and Actions (on Windows 10)
+don't touch public/js/app.js
+We will write and update the code on resource/js/app.js
+discover resource/sass/*.scss
