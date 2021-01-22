@@ -22,3 +22,7 @@ discover resource/sass/*.scss
 7) GUI of instagram update the nav in the up
 8) Change scss files
 After changing scss files you should run "npm run dev"
+
+9) add new field in user named "username"
+add this field in app/database/migrations
+and then run the cmd "php artisan migrate:fresh"
