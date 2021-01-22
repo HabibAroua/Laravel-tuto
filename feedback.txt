@@ -1,0 +1,18 @@
+1)Install composer and laravel
+2)create new project
+3)run the project using "php artisan serve"
+4)discover resources/views/welcome.blade.php and change the content
+5)Generating login flow with "php artisan make:auth"
+    For Laravel >=6
+
+    composer require laravel/ui
+    php artisan ui vue --auth
+    php artisan migrate
+6) npm install
+to clear cash "npm cache clear --force"
+npm run dev x2
+How To Disable App Notifications In Windows 10
+if you use windows 10 
+All you have to do is Enable windows notification
+
+windows settings ->> Notifications and Actions (on Windows 10)
