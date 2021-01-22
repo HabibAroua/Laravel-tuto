@@ -20,4 +20,5 @@ don't touch public/js/app.js
 We will write and update the code on resource/js/app.js
 discover resource/sass/*.scss
 7) GUI of instagram update the nav in the up
-
+8) Change scss files
+After changing scss files you should run "npm run dev"
