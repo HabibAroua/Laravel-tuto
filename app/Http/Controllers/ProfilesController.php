@@ -3,15 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
 class ProfilesController extends Controller
 {
-    public function index()
+    public function index($user)
     {
-        $x = 2;
-        if($x == 2)
-            return view('home');
-        else
-            return view('welcome');
+        dd(User::find($user));
+        return view('home');
     }
 }
