@@ -27,4 +27,5 @@ After changing scss files you should run "npm run dev"
 add this field in app/database/migrations
 add in controller and model it's very important
 and then run the cmd "php artisan migrate:fresh"
-
+10) gte teh data from the controller
+create new Controller named "php artisan make:controller ProfilesController"
