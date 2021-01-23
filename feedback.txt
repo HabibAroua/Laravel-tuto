@@ -31,3 +31,4 @@ and then run the cmd "php artisan migrate:fresh"
 create new Controller named "php artisan make:controller ProfilesController"
 to pass variable from the controller to the view ==> view('view name', ['var' => value]
 11) create to the model using "php artisan make:model Profile -m"
+go to migrate file and add the fields of profile then migrate to the database "php artisan migrate"
