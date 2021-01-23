@@ -15,10 +15,10 @@
             </div>
             <div class="pt-4 font-weight-bold">Markers</div>
             <div>
-                Soy coder && amo con todo mi amor a soy luna(karol sevilla & ruggero pascuarelli) 😍 siguanme también amo a los Chavis de cd9 gracias 👉✌👈😂
+                {{$user->profile->description}}
             </div>
             <div>
-                <a href="#">www.makers.com</a>
+                <a href="{{$user->profile->url}}">{{$user->profile->url}}</a>
             </div>
         </div>
         <div class="row pt-5">

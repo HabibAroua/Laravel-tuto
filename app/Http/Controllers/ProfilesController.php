@@ -8,7 +8,8 @@ class ProfilesController extends Controller
 {
     public function index($user)
     {
-        $user = (User::find($user));
+        $user = User::findOrFail($user); //this function redirect to 404 page if the user is not exist
+        //$user = (User::find($user));
         return  view
                 (
                 'home',
