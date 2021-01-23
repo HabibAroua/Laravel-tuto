@@ -44,4 +44,4 @@ Psy Shell v0.10.6 (PHP 7.4.14 — cli) by Justin Hileman
 >>> $profile->user_id = 1 ;
 => 1
 >>> $profile->save();
-12) create new model named Post "php artisan make:model Post -m"
+12) create new model named Post "php artisan make:model Post -m" and migrate
