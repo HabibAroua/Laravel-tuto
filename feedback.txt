@@ -45,3 +45,6 @@ Psy Shell v0.10.6 (PHP 7.4.14 — cli) by Justin Hileman
 => 1
 >>> $profile->save();
 12) create new model named Post "php artisan make:model Post -m" and migrate
+
+Error : The POST method is not supported for this route. Supported methods: GET, HEAD. Laravel
+Solution : php artisan route:cache
