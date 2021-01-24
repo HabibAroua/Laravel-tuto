@@ -48,3 +48,5 @@ Psy Shell v0.10.6 (PHP 7.4.14 — cli) by Justin Hileman
 
 Error : The POST method is not supported for this route. Supported methods: GET, HEAD. Laravel
 Solution : php artisan route:cache
+
+class to add image "composer require intervention/image" after you run this "php artisan storage:link"
