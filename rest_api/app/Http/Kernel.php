@@ -42,7 +42,8 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \App\Http\Middleware\AuthKey::class, //if you add this list the result gonna be <<{"message":"App key not found"}>>
+            //\App\Http\Middleware\AuthKey::class, //if you add this list the result gonna be <<{"message":"App key not found"}>>
+            \App\Http\Middleware\AuthBasic::class,
         ],
     ];
 
