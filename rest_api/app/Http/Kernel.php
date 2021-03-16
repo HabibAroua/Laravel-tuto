@@ -43,10 +43,9 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             //\App\Http\Middleware\AuthKey::class, //if you add this list the result gonna be <<{"message":"App key not found"}>>
-            \App\Http\Middleware\AuthBasic::class,
+            //\App\Http\Middleware\AuthBasic::class,
         ],
     ];
-
     /**
      * The application's route middleware.
      *
@@ -64,5 +63,12 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'client_credentials' => [
+            \Laravel\Passport\Http\Middleware\CheckClientCredentials::class,
+            'throttle:60,1',
+            'bindings',
+        ]
     ];
+
+
 }

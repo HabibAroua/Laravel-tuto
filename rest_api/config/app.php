@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class, //you should run the command <<composer require paragonie/random_compat=~2.0>> and <<composer require laravel/passport>> migrate then run this <<php artisan passport:install>>
 
         /*
          * Package Service Providers...

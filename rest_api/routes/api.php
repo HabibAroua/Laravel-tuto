@@ -25,3 +25,7 @@ Route::put('country/{id}','App\Http\Controllers\Country\CountryController@countr
 Route::delete('country/{country}','App\Http\Controllers\Country\CountryController@countryDelete');
 */
 Route::apiResource('country','App\Http\Controllers\Country\Country');
+Route::post('register', [App\Http\Controllers\AuthController::class, 'register'])->name('register');
+Route::post('login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
+Route::middleware(\App\Http\Middleware\AuthBasic::class)->get('code_token',function (){ return "hello";});
+
