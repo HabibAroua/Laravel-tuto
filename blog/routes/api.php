@@ -17,3 +17,6 @@ Route::group(['prefix'=>'products'],function(){
     Route::apiResource('/{product}/reviews','ReviewController');
 });
 
+Route::get('/products/{id}', 'ProductController@findById');
+
+
